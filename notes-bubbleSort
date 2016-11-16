@@ -1,0 +1,43 @@
+Sorting
+sorting is used much more frequently than you'd expect
+
+Examples:
+-file systems
+-photos
+-games
+-FB/Twitter
+-Friends
+
+Sorting can consume a lot of resources
+the study of sorting is an excellent learning tool
+-different programming techniques
+-excellent demonstration of algorithmic complexity
+-makes you think about exactly what an algorithm is doing
+
+How to evaluate the efficiency
+-comparisons
+-exchanges
+-storage
+
+
+[55,26,93,17,77,31,44,55,20]
+
+Bubble sort (simplest but dumbest)
+-start from left
+-compare adjacent elements
+-If wrong order, switch them
+-then move to next pair
+-repeat n times
+
+(**every time you iterate through the list, it's called a pass)
+Largest element always ends as the last element through pass 1
+In each pass the largest element unsorted element will move all the way to right
+Do n passes to all elements in the list
+
+
+ALGORITHMIC COMPLEXITY                                                                        SHORT BUBBLE
+Original Bubble Sort                                     Comparisons      Exchanges           Comp      Ex
+comparisons in each pass: n - 1  *  Total passes: n passes = O(n^2)       O(1)                O(n)      O(1)
+Best case: Already sorted (n - 1) *  Total passes: n passes = O(n^2)      O(n^2)              O(n^2)    O(n^2)
+Worst case: Sorted backwards (n-1) * Total passes: n passes = O(n^2)      O(n^2)              O(n^2)    O(n^2)
+Average case: n - 1 * Total passes: n passes O(n^2)

@@ -1,0 +1,36 @@
+  Queue: An ordered collection of elements, where the addition of new items only takes place at one end (called the back), and the removal of existing items only takes place the other end (called the front)
+
+  Stack: LIFO
+
+  Queue: FIFO
+
+  q = Queue() //Create a new empty queue
+  args: None
+  returns: Empty queue
+
+  q.enqueue(item) //Add a new item to queue q
+  args: the item you want to add
+
+  q.dequeue(item) //Remove item from the front of the queue
+  args:none
+  returns: the item remove
+
+  q.isEmpty() //Returns true if queue is empty, false otherwise
+  args: None
+  Return: boolean
+
+  q.size() //Returns the number of elements in queue
+  args: None
+  Return: number of items
+
+  q.peek() //Looks at the element in the front of the queue without changing the queue.
+  args: 0
+  returns: the element in front of the queue
+
+  q.addRear(item)//Ads a new item to the read of dequeue "Like enqueue"
+  args: item to be Added
+  return: Nothing
+
+  q.removeFront(): //Removes an item from the front of the queue  "Like dequeue" and "pop"
+  args: Nothing
+  returns: the item

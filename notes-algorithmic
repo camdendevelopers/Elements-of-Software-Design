@@ -1,0 +1,19 @@
+Orders of Magnitude 
+
+Single loop
+t = kn
+O(n) algorithm
+
+Double loop
+t = kn^2
+O(n^2) algorithm
+
+Binary search
+O(nlogn) algorithm
+
+write a program that calculates 
+1+2+3+4....+n
+
+
+(n * (n-1)) / 2
+

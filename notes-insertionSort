@@ -1,0 +1,19 @@
+54 26 93 17 77 31 44 55 20
+sorted                    unsorted side
+
+two list (sorted, unsorted)
+
+54 in sorted
+
+26 in unsorted
+
+Algorithmic complexity: comparisons
+best case: O(n)
+worst case: O(n^2)
+average: O(n^2)
+
+Algorithmic complexity: Exchanges
+best case: O(1)
+worst case: O(n^2)
+average case: O(n^2)
+**No exchanges, just shifts (which are much faster)

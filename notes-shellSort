@@ -1,0 +1,35 @@
+Shell Sort (aka Diminishing Increment Sort)
+
+Break the original list into a number of smaller sub lists which you sort using
+
+gap = number of sublists
+gap = 3
+
+54 26 93 17 77 31 44 55 20
+
+list 1 :  54      17      44
+list 2:      26      77     55
+list 3:         93      31    20
+
+Magically sort:
+list1: 17     44    54
+list2:    26    55    77
+list3:      20    31    93
+
+You use insertion sort because it uses shift
+
+
+Algorithmic comparison
+              Comparisons     Exchanges
+sorted list:     O(n^2)         O(1)         The whole sort complexity
+reverse sort:    O(n^2)         O(n^2)         O(n^(3/2))
+average:         O(n^2)         O(n^2)
+
+O(n!)
+O(2^n)
+O(n^2)
+O(n^(3/2))
+O(nlogn)
+O(n)
+O(logn)
+O(1)

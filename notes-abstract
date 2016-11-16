@@ -1,0 +1,20 @@
+I = OOP
+II = Abstract Data Types
+
+Concrete vs Abstract Data Types
+
+Concrete = tied to its internal representation
+
+Abstract data type = ADT is a means for storing and accessing data without concern of the details of its implementation
+
+int = 1 byte or 8 bits #Before
+int = 32 bit number #now
+
+
+float = 32 bits
+double = 64 bits
+
+int and floats are concrete
+
+another example 
+array are concrete (different from python list)		

@@ -1,0 +1,8 @@
+#Binary Search: Take advantage of the fact that a list is ordered to be more #efficient
+#Start searching in the middle of the list
+
+Divide an conquer strategy
+
+Algorithmic Complexity:
+Best Case: Item is right in the middle O(1)
+Worst Case: Item is not found O(nlog(n))

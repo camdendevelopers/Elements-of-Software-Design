@@ -1,0 +1,31 @@
+Searching: An algorithmic process of finding a particular item within a collection of items.
+
+-It can return True or False
+-It can return a way of identifying where the item was found.
+
+Sequential search:  start at the first element proceed in a liner fashion until you either find it or determine its' not present.
+
+Algorithm complexity:
+Measure the runtime (Problem: Depends on data, hardware, other programs running)
+
+Since we have too many things  that affect it you count comparisons
+
+UNORDERED
+if the item is present:
+  Best case: first element O(1)
+  Worst case: last element O(n)
+  Average case: O(n)
+
+If the item is not present:
+  NO BEST CASE SCENARIO O(n)
+
+ORDERED
+if the item is present:
+  Best case: First element O(1)
+  Worst case: Last element O(n)
+  Average: O(n)
+
+if the item is not present
+  Best case: Element is less than first element O(1)
+  Worst case: Element is greater than last element O(n)
+  Average case: 

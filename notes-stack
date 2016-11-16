@@ -1,0 +1,35 @@
+Stack is an ordered collection of elements where the addition of new items and removal of existing items ONLY take place at the same end (called the top)
+
+Imagine a stack of trays 
+You take the top tray and so on until they replace them. So bottom trays never get accessed. (LIFO method)
+
+Image that you have a railroad,how can you you reverse the direction of the train
+
+
+when you create a card onject does it return anything? YES
+newCard = Card() it returns the pointer of the card
+
+s = Stack()
+args = none
+returns: new stack
+
+s.push() insert new elements on the top of stack s
+args = items you want to insert
+return = nothing
+
+s.pop() remove item from the top of stack s
+args: None
+returns = top element of the stack
+
+
+s.peek() look at the top element in stack s
+args: None
+returns = top element of the stack 
+
+s.isEmpty() returns true if there are no elements in stack s
+args: None
+returns: Boolean
+
+s.size() the number of elements in stack s
+args: None
+returns: number of elements

@@ -1,0 +1,11 @@
+ints and floats and tuple and strings are immutable
+lists and dictionary are mutable
+
+
+deep equality vs shallow equality
+deep quality: all parts are equal
+shallow quality: compary pointers (to memory)
+
+
+single loop: given a problem of size n, the time is proportional to n
+double loop: give a problem of size n, the time is proportional to n ^ 2
