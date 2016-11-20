@@ -68,8 +68,6 @@ def mergeSort(alist):
         righthalf = alist[mid:]
 
         mergeSort(lefthalf)
-        mergeSort(righthalf)
-
         i = 0
         j = 0
         k = 0
@@ -144,7 +142,7 @@ def createList(t, n):
         return l
 
     elif t == "Reverse":
-        l = [i for i in range(n-1, 0, -1)]
+        l = [i for i in range(n, 0, -1)]
         return l
 
     else:
@@ -172,7 +170,7 @@ def main():
         # 2. Print Header
         print("Input type = ", typeSort)
         print("                    avg time   avg time   avg time")
-        print("   Sort function     (n=10)    (n=100)    (n=1000)")
+        print("   Sort function     (n={})    (n={})    (n={})".format(listLengths[0], listLengths[1], listLengths[2]))
         print("-----------------------------------------------------")
 
         # 3. Perform test for each type of function
