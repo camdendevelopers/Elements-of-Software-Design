@@ -1,0 +1,38 @@
+Insert algorithm
+Starting at the root of the tree, "search" the binary tree, comparing the new data item to the data item in the current node.
+
+-if new data < current node, "search" the left subtree
+-if the new data > current node, "search" the right subtree
+-when there is no child to search, we have found the position where the new node belongs
+
+Delete algorithm
+Find the node that you want to delete:
+There are 3 cases:
+  1. leaf node (no children). Simply delete the node
+  2. Node has 1 child (promote the child)
+  3. Node has 2 children (Identify a candidate to replace it "successor") Typically the on right.
+     -Find the lowest element on the right subtree. This is your successor. You replace the node to be delete with the successor.
+     -Delete the original successor from the tree.
+
+			      100
+                             /    \
+		            /      \
+                           /        \
+		          50 	    150	
+		        /   \       /   \
+                       /     \     /     \
+		      25     75  125     175
+				/    \
+			       /      \    				
+                              110    140     
+				     /  \
+                   		 120     145 
+
+
+Algorithmic complexity:
+Insert O(logn)
+Delete O(logn)
+Find   O(logn)
+
+
+                 			

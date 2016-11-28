@@ -1,3 +1,13 @@
+#  File: ExpressionTree.py
+#  Description: This program performs creates a tree from a given expression and computes the answer
+#  Student's Name: Marcos Ortiz
+#  Student's UT EID: mjo579
+#  Course Name: CS 313E
+#  Unique Number: 51320
+#
+#  Date Created: 11/28/2016
+#  Date Last Modified: 12/02/2016
+
 import time
 import sys
 sys.setrecursionlimit(10000)
@@ -20,7 +30,6 @@ class Stack (object):
 
    def size (self):
       return len(self.items)
-
 
 class BinaryTree (object):
     def __init__(self, initdata = "root"):
@@ -66,7 +75,6 @@ class BinaryTree (object):
         currentNode = self
         stack = Stack()
 
-
         for index in range(0, len(expr)-1):
             currentToken = expr[index]
 
@@ -89,7 +97,6 @@ class BinaryTree (object):
                 currentNode = stack.pop()
 
     def evaluate (self, root):
-
         operatorList = ['+', '-', '*', '/']
 
         if root != None:
@@ -145,7 +152,6 @@ def main():
 
         # 3. Perform line specific tasks
         line = line.strip()
-        #value = eval(line)
         print("Infix expression: ", line)
         line = line.split()
 
@@ -155,7 +161,6 @@ def main():
 
         # 5. Print results
         print("\tValue:   ", tree.evaluate(tree))
-        #print("\tValue: ", value)
         print("\tPrefix expression: ", tree.preorder(tree))
         print("\tPostfix expression: ", tree.postorder(tree))
         print()

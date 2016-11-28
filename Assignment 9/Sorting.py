@@ -159,7 +159,7 @@ def createList(t, n):
 
 def main():
 
-    #Declare list that will be used to perform tests accoring to specifications
+    #Declare lists that will be used to perform tests according to specifications
     listLengths = [10,100,1000]
     listFunctions = ["bubbleSort", "selectionSort", "insertionSort", "shellSort", "mergeSort", "quickSort"]
     listType = ["Random", "Sorted", "Reverse", "Almost Sorted"]
