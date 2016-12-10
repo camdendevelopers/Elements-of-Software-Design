@@ -1,0 +1,54 @@
+Graphs - Last abstract data type
+
+Graphs are all trees but not all trees are graphs
+          3       //Graph
+        /   \
+       4     5
+        \   /
+          6
+
+          3       //Tree and Graph
+        /   \
+       4     5
+            /
+          6
+
+Vertex: the same thing as as in a node
+Edges: the same thing as in a tree (connection between vertices)
+Weight: Indicates that there is a cost associated with going from one vertex to another
+Path: the same thing as in a tree
+Cycle: A path that starts and ends in the same vertex (3 - 4 - 6 - 5 - 3)
+       A graph that contains no cycles is called an acyclic graph
+       A directed graph is anything that has direction associated with its edges
+       An undirected graph does not have direction associated with its edges
+       A directed graph with no cycles is called a DAG (Directed Acyclic Graph)
+Source: A vertex that has only outgoing edges
+Sink: A vertex that has only incoming edges
+A graph is an ordered pair G = (V,E)
+      where: V is a set of vertices and E is a set of edges
+An edges is a tuple (a, b, [w]) where a and b and in V and w represents an optional weight
+If G is a directed graph, then the order ab, indicates an edges from a to b
+
+
+G = (V,E) IS DIRECTED
+V = {v0,v1,v2,v3,v4,v5}
+E = {(v0, v14, 1),
+     (v1, v0, 5),
+     (v1, v2, 4),
+     (v2, v3, 9)}
+
+
+Class Graph:
+
+Class Vertex:
+
+
+g = Graph()
+g.addVertex(vert)
+g.addEdge(fromVertex, toVertex)
+g.addEdge(fromVertex, toVertex, weight)
+g.getVertex(value)
+g.setVertex(value)
+
+
+Adjacency Matrix

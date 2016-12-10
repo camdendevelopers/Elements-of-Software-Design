@@ -33,3 +33,14 @@ O(nlogn)
 O(n)
 O(logn)
 O(1)
+
+54 26 93 17 77 31 
+subListCount = 3
+
+Startposition = 0
+
+0 3
+
+3. 6
+
+

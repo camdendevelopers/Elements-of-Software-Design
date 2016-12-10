@@ -1,0 +1,62 @@
+#AVL tree
+Adelson-Welskii and Landis tree
+First thing: A balance factor: the height of the left subtree - height of the right subtree
+    25          #Balance factor is -2
+10      40
+            45
+                42
+
+The balance factor of all leaf nodes is zero.
+A tree is considered balance if the balance factor is -1, 0, or 1
+
+/// LEFT ROTATION
+1. If the balance factor of a node is -2, then the right subtree is two nodes deeper than the left subtree
+2. If the balance factor of a the right child is also negative, then we do a left rotation on that node
+3. Left rotation: 1) Promote the right child to be the new root 2) Move the old root to be the left child of the new root 3) if the new root already has a left child, make it the right child of the new left child (Guaranteed to be vacant)
+
+/// RIGHT ROTATION
+1. If the balance factor of a node is 2, then the left subtree is two nodes deeper than the right subtree
+2. If the balance factor of a the right child is also positive, then we do a rogjt rotation on that node
+3. Right rotation: 1) Promote the left child to be the new root 2) Move the old root to be the right child of the new root 3) if the new root already has a right child, make it the left child of the new right child (Guaranteed to be vacant)\
+RIGHT ROTATION EXAMPLE
+          x
+      t       z
+   r     v
+    s
+
+        =>
+          t
+      r        y
+        s    v   z
+     \
+
+  /// SPECIAL CASES
+   -2             2
+      1    or  -1
+    0             0
+    ^
+    |
+    |
+Instead of doing a left rotation, do a right rotation on the new root node first, then do the left rotation
+bf = Balance factor
+
+
+                                  30
+                                  bf-2
+                                20      40
+                              bf0       bf-1
+                                    35      50
+                                    bf0     bf1
+                                          45
+                                          bf0
+
+                                       40
+                                       bf-2
+                                30              50
+                                bf0            bf-1
+                              25    35       45
+                             bf0    bf0      bf1
+
+
+
+try with 10,20,30,40,50
